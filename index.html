@@ -10,13 +10,16 @@
             }
             h2{
                 text-align: center;
+                text-decoration: underline;
+                text-underline-position: under;
+                text-decoration-thickness: 2px; 
+                text-decoration-color: rgb(8, 8, 8);  
             }
             header{
                 position:sticky; 
                 top: 3px; 
                 z-index: 1000;
             }
-            
             .navbar{
                 border-radius:25px;
                 background-color: rgb(0, 0, 0);
@@ -49,16 +52,19 @@
                 margin-right: 25px;
             }
             .slider{
-                width: 90%;
-                height: 650px;
+                width: 80%;
+                height: 500px;
                 overflow: hidden;
-                margin: 5% 5% 5% 5%;   
+                margin: 4% 10% 4% 10%;   
+                position: relative;
             }
             figure{
                 position: relative;
                 left: 0;
                 width: 400%;
-                animation: 150s slide infinite;
+                margin: 0;
+                padding: 0;
+                animation: 100s slide infinite;
             }
             .slide{
                 position: relative;
@@ -76,7 +82,7 @@
             }
             .slide img{
                 width: 100%;
-                height:650px;
+                height:500px;
             }
             @keyframes slide {
                 0%{
@@ -120,8 +126,7 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: center ;
-                
+                justify-content: center ; 
             }
             .flex-box{
                 width: 200px;
@@ -152,6 +157,11 @@
                 margin: 0 auto;
                 align-items: center;  
             }
+            .contact img{
+                align-items: center;
+                height: 600px;
+                width: 100%; 
+            }
             footer{
                 background-color: black;
                 padding-left:43%;
@@ -166,7 +176,6 @@
                 margin-top: 0;
                 }
             }
-            
         </style>
     </head>
     <body>
@@ -183,7 +192,6 @@
                 </div>
             </nav>
         </header>
-
         <section id="home">
             <div class="slider">
                 <figure>
@@ -200,29 +208,27 @@
                         <img src="3.png" alt="No Image">
                     </div>
                     <div class="slide">
-                        <img src="100.png" alt="No Image">
+                        <h1>BONUS<br>Just for lerners non certification Free courses</h1>
+                        <img src="4.png" alt="No Image">
                     </div>
-                    
                 </figure>
             </div>
         </section>
-
+        <br><br>
         <section id="about">
             <h2>ABOUT ME</h2>
-            <br><br>
+            <br>
             <form>
                 <h2>"Access Free Learning & Career Opportunities"</h2>
                 <p>Our platform is dedicated to empowering students by curating a comprehensive list of free online courses and internship opportunities available from reputable sources. We understand that access to quality education and practical experience can be a game-changer for aspiring professionals, which is why we have compiled a diverse range of resources across various fields, including technology, business, design, and more. By providing direct links to these free courses and internships, we aim to eliminate financial barriers and make learning accessible to everyone. Whether you are looking to enhance your skills or gain valuable work experience, our platform serves as a one-stop resource to help you navigate your educational and career journey without any cost. just register and access the courses.</p>
             </form>
         </section>
-        <section id="contact">
-            <h2>CONTACT</h2>
-                    <p>Say hello at <a href="https://mail.google.com/abcd.com" target="_blank college" style="color: rgb(0, 0, 0);text-decoration-color: rgb(0, 0, 0);"> ..........@gmail.com</a> </p>
-        </section>
+        <br><br>
         <section id="links">
             <div>
                 <h2>Free Self-Paced internships(Short Term)</h2>
             </div>
+            <br>
             <div class="flex-container">
                 <div class="flex-box" >
                     TATA
@@ -265,9 +271,11 @@
                     </div>
                 </div>
             </div>
+            <br>
             <div>
                 <h2>Free Skill Building Skills&internships(Long Term)</h2>
             </div>
+            <br>
             <div class="flex-container">
                 <div class="flex-box">
                     Excelr
@@ -286,10 +294,13 @@
                     </div>
                 </div>
             </div>
+            <br><br>
             <h2>BONUS</h2>
+            <br>
             <div>
                 <h2>Learning skills no certification </h2>
             </div>
+            <br>
             <div class="flex-container">
                 <div class="flex-box">
                     Udemy
@@ -308,9 +319,11 @@
                     </div>
                 </div>
             </div>
+            <br>
             <div>
                 <h2>Low cost Internships(long term)</h2>
             </div>
+            <br>
             <div class="flex-container">
                 <div class="flex-box">
                     ybt foundation
@@ -323,11 +336,18 @@
             </div>
         </section>
         <br><br>
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <br>
+            <div class="contact">
+                <img src="100.png" alt="No Image">
+            </div>
+        </section>
+        <br><br>
         <footer>
             <div class="bottom-bar">
                 <p>&copy 2025 STUD-LINK All rights reserved.</p>
             </div>
         </footer>
-
     </body>
 </html>
