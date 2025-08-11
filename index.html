@@ -42,7 +42,7 @@
                 color: white;
             }
             li {
-                list-style-type: style none;
+                list-style-type: none;
                 display: inline-block;
             }
             li a{
@@ -52,11 +52,11 @@
                 margin-right: 25px;
             }
             .slider{
-                width: 80%;
-                height: 500px;
+                width: 100%;
+                height: auto;
                 overflow: hidden;
-                margin: 4% 10% 4% 10%;   
-                position: relative;
+                margin: 4% 0% 4% 0%;   
+                position:relative;
             }
             figure{
                 position: relative;
@@ -73,16 +73,17 @@
             }
             .slide h1{
                 position: absolute;
-                font-size: 3em;
+                font-size: 2em;
                 width: 100%;
                 color: white;
-                text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+                text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
                 text-align: center;
-                margin-top: 50px;
+                margin-top: 6%;
             }
             .slide img{
                 width: 100%;
-                height:500px;
+                height:auto;
+                object-fit: cover;
             }
             @keyframes slide {
                 0%{
@@ -159,16 +160,17 @@
             }
             .contact img{
                 align-items: center;
-                height: 600px;
+                height: auto;
                 width: 100%; 
+                object-fit: cover;
             }
             footer{
                 background-color: black;
-                padding-left:43%;
+                justify-content: center; 
+                align-items: center;
                 color: white;
                 display: flex;
                 text-align: center;
-                
             }
                 @media screen and (max-width: 600px) {
                 .column, input[type=submit] {
@@ -214,7 +216,6 @@
                 </figure>
             </div>
         </section>
-        <br><br>
         <section id="about">
             <h2>ABOUT ME</h2>
             <br>
@@ -346,7 +347,7 @@
         <br><br>
         <footer>
             <div class="bottom-bar">
-                <p>&copy 2025 STUD-LINK All rights reserved.</p>
+                <p> &copy; 2025 STUD-LINK All rights reserved.</p>
             </div>
         </footer>
     </body>
